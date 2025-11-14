@@ -2,6 +2,9 @@
   font-size: 16px;
   scroll-behavior: smooth;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
   color-scheme: dark;
   --color-bg: #040613;
   --color-surface: #0b1220;
@@ -18,7 +21,10 @@
   );
   --shadow-soft: 0 24px 48px rgba(8, 12, 24, 0.4);
   --shadow-card: 0 18px 36px rgba(15, 23, 42, 0.28);
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 >>>>>>> main
 }
 
@@ -37,6 +43,8 @@ body {
   min-height: 100vh;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 body.theme-dark {
@@ -70,6 +78,7 @@ body.theme-light {
 }
 
 >>>>>>> main
+>>>>>>> main
 a {
   color: inherit;
   text-decoration: none;
@@ -97,10 +106,18 @@ img {
   justify-content: space-between;
 <<<<<<< HEAD
   gap: 1.25rem;
+  padding: 0.45rem 5vw;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 18px 36px rgba(4, 7, 17, 0.55);
+=======
+<<<<<<< HEAD
+  gap: 1.25rem;
   padding: 0.55rem 5vw;
   background: rgba(5, 8, 18, 0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--color-border);
+>>>>>>> main
 }
 
 .brand {
@@ -120,6 +137,8 @@ img {
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+<<<<<<< HEAD
+=======
 =======
   gap: 2rem;
   padding: 1.25rem 8vw;
@@ -148,6 +167,7 @@ body.theme-light .top-bar {
   font-size: 1.5rem;
   font-weight: 600;
 >>>>>>> main
+>>>>>>> main
 }
 
 .tagline {
@@ -156,14 +176,73 @@ body.theme-light .top-bar {
   font-size: 0.78rem;
   letter-spacing: 0.07em;
 =======
+<<<<<<< HEAD
+  font-size: 0.78rem;
+  letter-spacing: 0.07em;
+=======
   font-size: 0.9rem;
   letter-spacing: 0.01em;
+>>>>>>> main
 >>>>>>> main
 }
 
 .top-bar__controls {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
+  gap: 1.25rem;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+}
+
+.top-nav__link {
+  font-size: 0.8rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-muted);
+  position: relative;
+  padding-bottom: 0.35rem;
+  transition: color 0.2s ease;
+}
+
+.top-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: transparent;
+  transition: background 0.2s ease;
+}
+
+.top-nav__link:hover,
+.top-nav__link:focus-visible {
+  color: var(--color-primary);
+}
+
+.top-nav__link:hover::after,
+.top-nav__link:focus-visible::after {
+  background: var(--color-primary);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.6rem 1.45rem;
+  border-radius: 999px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease,
+    color 0.2s ease;
+=======
 <<<<<<< HEAD
   gap: 0.85rem;
 =======
@@ -200,10 +279,24 @@ body.theme-light .top-bar {
   gap: 0.35rem;
 >>>>>>> main
   border: 1px solid transparent;
+>>>>>>> main
 }
 
 .btn.primary {
   background: var(--color-primary);
+<<<<<<< HEAD
+  color: #020617;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn.primary:hover,
+.btn.primary:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 44px rgba(56, 189, 248, 0.32);
+}
+
+
+=======
   color: #fff;
   box-shadow: var(--shadow-soft);
 }
@@ -220,16 +313,26 @@ body.theme-light .top-bar {
 }
 
 <<<<<<< HEAD
+>>>>>>> main
 .whatsapp-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #22c55e;
+  color: #0b0f1c;
+  box-shadow: 0 12px 22px rgba(34, 197, 94, 0.28);
+=======
   width: 36px;
   height: 36px;
   border-radius: 999px;
   background: #22c55e;
   color: #0b0f1c;
   box-shadow: var(--shadow-soft);
+>>>>>>> main
   transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
@@ -237,6 +340,8 @@ body.theme-light .top-bar {
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 18px 32px rgba(34, 197, 94, 0.35);
   filter: saturate(1.1);
+<<<<<<< HEAD
+=======
 =======
 .theme-toggle {
   display: inline-flex;
@@ -289,6 +394,7 @@ body.theme-light .top-bar {
 .toggle-switch input:checked + .switch-track .switch-thumb {
   transform: translateX(24px);
 >>>>>>> main
+>>>>>>> main
 }
 
 .hero {
@@ -298,9 +404,15 @@ body.theme-light .top-bar {
   gap: 2.2rem;
   padding: 2.2rem 5.5vw 2rem;
 =======
+<<<<<<< HEAD
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.2rem;
+  padding: 2.2rem 5.5vw 2rem;
+=======
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 3rem;
   padding: 3.5rem 8vw 2.5rem;
+>>>>>>> main
 >>>>>>> main
   align-items: center;
 }
@@ -315,7 +427,11 @@ body.theme-light .top-bar {
 <<<<<<< HEAD
   margin-bottom: 1.4rem;
 =======
+<<<<<<< HEAD
+  margin-bottom: 1.4rem;
+=======
   margin-bottom: 1.6rem;
+>>>>>>> main
 >>>>>>> main
   color: var(--color-muted);
 }
@@ -340,9 +456,15 @@ body.theme-light .top-bar {
   gap: 1.3rem;
   padding: 0 5.5vw 2.6rem;
 =======
+<<<<<<< HEAD
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.3rem;
+  padding: 0 5.5vw 2.6rem;
+=======
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   padding: 0 8vw 3.5rem;
+>>>>>>> main
 >>>>>>> main
 }
 
@@ -366,9 +488,15 @@ body.theme-light .top-bar {
   display: grid;
   gap: 3rem;
 =======
+<<<<<<< HEAD
+  padding: 2rem 5.5vw 3rem;
+  display: grid;
+  gap: 3rem;
+=======
   padding: 2.5rem 8vw 4rem;
   display: grid;
   gap: 3.5rem;
+>>>>>>> main
 >>>>>>> main
 }
 
@@ -392,6 +520,9 @@ body.theme-light .top-bar {
   flex-wrap: wrap;
   justify-content: center;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
   gap: 0.6rem 1.3rem;
   max-width: 960px;
   overflow-x: auto;
@@ -414,6 +545,8 @@ body.theme-light .top-bar {
   font-weight: 300;
   color: var(--color-muted);
   padding-bottom: 0.2rem;
+<<<<<<< HEAD
+=======
 =======
   gap: 0.75rem 1.5rem;
   max-width: 960px;
@@ -426,6 +559,7 @@ body.theme-light .top-bar {
   font-weight: 300;
   color: var(--color-muted);
   padding-bottom: 0.25rem;
+>>>>>>> main
 >>>>>>> main
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -440,15 +574,21 @@ body.theme-light .top-bar {
 .categoria-section {
   display: grid;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
   gap: 1.6rem;
   scroll-margin-top: 80px;
   border-top: 1px solid rgba(148, 163, 184, 0.12);
   padding-top: 1.9rem;
+<<<<<<< HEAD
+=======
 =======
   gap: 1.8rem;
   scroll-margin-top: 120px;
   border-top: 1px solid rgba(148, 163, 184, 0.12);
   padding-top: 2.5rem;
+>>>>>>> main
 >>>>>>> main
 }
 
@@ -467,14 +607,20 @@ body.theme-light .top-bar {
 .categoria-section__grid {
   display: grid;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.25rem;
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
+<<<<<<< HEAD
+=======
 =======
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.75rem;
+>>>>>>> main
 >>>>>>> main
 }
 
@@ -482,26 +628,38 @@ body.theme-light .top-bar {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
   border-radius: 18px;
   padding: 0.95rem;
   display: grid;
   gap: 0.7rem;
+<<<<<<< HEAD
+=======
 =======
   border-radius: 24px;
   padding: 1.4rem;
   display: grid;
   gap: 1rem;
 >>>>>>> main
+>>>>>>> main
   box-shadow: var(--shadow-card);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 .producto-card img {
   aspect-ratio: 5 / 4;
 }
 
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 >>>>>>> main
 .producto-card:hover {
   transform: translateY(-6px);
@@ -512,7 +670,11 @@ body.theme-light .top-bar {
 <<<<<<< HEAD
   font-size: 0.94rem;
 =======
+<<<<<<< HEAD
+  font-size: 0.94rem;
+=======
   font-size: 1.05rem;
+>>>>>>> main
 >>>>>>> main
 }
 
@@ -521,7 +683,11 @@ body.theme-light .top-bar {
 <<<<<<< HEAD
   font-size: 0.82rem;
 =======
+<<<<<<< HEAD
+  font-size: 0.82rem;
+=======
   font-size: 0.95rem;
+>>>>>>> main
 >>>>>>> main
 }
 
@@ -534,8 +700,13 @@ body.theme-light .top-bar {
   gap: 1.4rem;
   padding: 2rem 5.5vw;
 =======
+<<<<<<< HEAD
+  gap: 1.4rem;
+  padding: 2rem 5.5vw;
+=======
   gap: 1.5rem;
   padding: 2.5rem 8vw;
+>>>>>>> main
 >>>>>>> main
 }
 
@@ -554,9 +725,14 @@ body.theme-light .top-bar {
     justify-content: center;
     text-align: center;
 <<<<<<< HEAD
+    padding: 0.55rem 5.5vw;
+    gap: 0.85rem;
+=======
+<<<<<<< HEAD
     padding: 0.7rem 5.5vw;
     gap: 0.85rem;
 =======
+>>>>>>> main
 >>>>>>> main
   }
 
@@ -566,6 +742,19 @@ body.theme-light .top-bar {
 
   .top-bar__controls {
     flex-direction: column;
+<<<<<<< HEAD
+    gap: 0.9rem;
+  }
+
+  .top-nav {
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .whatsapp-link {
+    width: 36px;
+    height: 36px;
+=======
   }
 
   .actions {
@@ -580,12 +769,22 @@ body.theme-light .top-bar {
   .theme-toggle {
     margin-top: 0.25rem;
 >>>>>>> main
+>>>>>>> main
   }
 }
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
+  .top-nav__link {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+  }
+
+  .hero {
+=======
   .hero {
 <<<<<<< HEAD
+>>>>>>> main
     padding: 2rem 5vw 1.8rem;
     text-align: center;
   }
@@ -604,6 +803,8 @@ body.theme-light .top-bar {
 
   .categoria-section__grid {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+<<<<<<< HEAD
+=======
 =======
     padding: 3rem 6vw 2rem;
   }
@@ -619,12 +820,26 @@ body.theme-light .top-bar {
   .categoria-section__grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 >>>>>>> main
+>>>>>>> main
   }
 }
 
 @media (max-width: 520px) {
+<<<<<<< HEAD
+  .top-nav {
+    gap: 0.6rem;
+  }
+
+  .top-nav__link {
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+  }
+
+  .category-nav {
+=======
   .category-nav {
 <<<<<<< HEAD
+>>>>>>> main
     gap: 0.4rem 0.6rem;
     justify-content: flex-start;
     padding-bottom: 0.3rem;
@@ -646,7 +861,11 @@ body.theme-light .top-bar {
 
 @media (max-width: 420px) {
   .top-bar {
+<<<<<<< HEAD
+    padding: 0.5rem 5vw;
+=======
     padding: 0.65rem 5vw;
+>>>>>>> main
   }
 
   .brand h1 {
@@ -667,6 +886,8 @@ body.theme-light .top-bar {
 @media (min-width: 1600px) {
   .catalogo {
     padding: 2.2rem 8vw 3.4rem;
+<<<<<<< HEAD
+=======
 =======
     gap: 0.5rem 1rem;
   }
@@ -678,6 +899,7 @@ body.theme-light .top-bar {
 
   .producto-card {
     padding: 1.1rem;
+>>>>>>> main
 >>>>>>> main
   }
 }
