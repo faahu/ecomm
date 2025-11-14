@@ -23,6 +23,7 @@ Si GitHub Desktop muestra varias ramas como "Current branch" simultáneamente, n
    - Realiza `Commit` de los cambios locales, y luego usa **Push origin** para alinearlos con el remoto. GitHub Desktop mostrará una única rama activa una vez que todo esté sincronizado.
 
 Estos pasos suelen resolver los escenarios en los que GitHub Desktop mantiene varias entradas en la lista de ramas actuales.
+<<<<<<< HEAD
 
 ## Consolidar el trabajo en una única rama
 
@@ -79,3 +80,5 @@ Si querés que absolutamente todo viva en `main` y evitar que GitHub Desktop gen
    - Si cambiaste la rama por error, vuelve a `main` y dispara un nuevo despliegue con **Retry deployment**.
 
 Así cada actualización que recibas de Codex quedará en la misma rama y la URL pública siempre mostrará la última versión.
+=======
+>>>>>>> main
