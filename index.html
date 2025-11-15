@@ -1,3 +1,6 @@
+Te lo dejo limpio y unificado (me quedo con la versión más completa: hero con imagen y todas las descripciones de productos), sin conflictos de git:
+
+```html
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -6,7 +9,10 @@
     <title>enviostech | Catálogo integral</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -21,23 +27,44 @@
           <a href="#ofertas">Ofertas</a>
           <a href="#contacto">Contacto</a>
         </nav>
-        <a class="whatsapp-badge" href="https://wa.me/5491144441234" target="_blank" rel="noopener noreferrer" aria-label="Hablar por WhatsApp con enviostech">
+        <a
+          class="whatsapp-badge"
+          href="https://wa.me/5491144441234"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Hablar por WhatsApp con enviostech"
+        >
           <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-            <path d="M16 3C9.373 3 4 8.373 4 15c0 2.356.65 4.558 1.78 6.456L4 29l7.61-1.945A12.88 12.88 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3Zm0 21c-1.09 0-2.162-.28-3.129-.808l-.223-.12-4.226 1.08 1.13-4.224-.145-.236A8.95 8.95 0 0 1 7 15c0-4.963 4.037-9 9-9s9 4.037 9 9-4.037 9-9 9Zm5.115-6.7c-.273-.14-1.62-.79-1.87-.88-.252-.093-.436-.14-.62.14-.186.273-.707.9-.866 1.086-.159.186-.318.207-.593.067-.275-.14-1.16-.422-2.21-1.347-.815-.72-1.36-1.61-1.52-1.885-.16-.273-.017-.42.122-.56.126-.126.273-.318.412-.478.14-.159.185-.275.278-.456.093-.186.046-.349-.022-.488-.07-.14-.604-1.45-.829-1.99-.22-.533-.445-.46-.613-.47l-.52-.01c-.186 0-.487.07-.742.346-.255.273-.972.948-.972 2.307s.994 2.68 1.134 2.866c.14.185 1.96 2.987 4.75 4.183.665.287 1.184.458 1.487.585.625.247 1.196.212 1.647.128.502-.094 1.55-.635 1.77-1.25.22-.614.22-1.14.153-1.25-.068-.112-.25-.18-.524-.32Z" />
+            <path
+              d="M16 3C9.373 3 4 8.373 4 15c0 2.356.65 4.558 1.78 6.456L4 29l7.61-1.945A12.88 12.88 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3Zm0 21c-1.09 0-2.162-.28-3.129-.808l-.223-.12-4.226 1.08 1.13-4.224-.145-.236A8.95 8.95 0 0 1 7 15c0-4.963 4.037-9 9-9s9 4.037 9 9-4.037 9-9 9Zm5.115-6.7c-.273-.14-1.62-.79-1.87-.88-.252-.093-.436-.14-.62.14-.186.273-.707.9-.866 1.086-.159.186-.318.207-.593.067-.275-.14-1.16-.422-2.21-1.347-.815-.72-1.36-1.61-1.52-1.885-.16-.273-.017-.42.122-.56.126-.126.273-.318.412-.478.14-.159.185-.275.278-.456.093-.186.046-.349-.022-.488-.07-.14-.604-1.45-.829-1.99-.22-.533-.445-.46-.613-.47l-.52-.01c-.186 0-.487.07-.742.346-.255.273-.972.948-.972 2.307s.994 2.68 1.134 2.866c.14.185 1.96 2.987 4.75 4.183.665.287 1.184.458 1.487.585.625.247 1.196.212 1.647.128.502-.094 1.55-.635 1.77-1.25.22-.614.22-1.14.153-1.25-.068-.112-.25-.18-.524-.32Z"
+            />
           </svg>
         </a>
       </div>
     </header>
+
     <main>
       <section class="hero">
-        <div class="hero__backdrop" aria-hidden="true"></div>
-        <div class="shell hero__content">
-          <p class="eyebrow">Catalogamos todo por vos</p>
-          <h1>Explorar catálogo</h1>
-          <p>Descubrí el catálogo más completo de tecnología y hogar. En enviostech priorizamos las categorías para que encuentres rápido lo que necesitás.</p>
-          <a class="btn" href="#catalogo">Ir al catálogo</a>
+        <div class="shell hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Catalogamos todo por vos</p>
+            <h1>Descubrí el catálogo más completo de tecnología y hogar</h1>
+            <p>
+              En enviostech priorizamos el catálogo: encontrá rápidamente todo
+              lo que buscás en nuestras categorías destacadas. Envíos a todo el
+              país y cuotas sin interés.
+            </p>
+            <a class="btn" href="#catalogo">Explorar catálogo</a>
+          </div>
+          <div class="hero__media">
+            <img
+              src="https://images.unsplash.com/photo-1512499622606-7f2748f4ef21?auto=format&fit=crop&w=960&q=80"
+              alt="Exhibidor con productos tecnológicos"
+            />
+          </div>
         </div>
       </section>
+
       <section id="ofertas" class="highlight">
         <div class="shell highlight__grid">
           <article class="highlight__card">
@@ -54,6 +81,7 @@
           </article>
         </div>
       </section>
+
       <section id="catalogo" class="catalog">
         <div class="shell">
           <header class="catalog__header">
@@ -79,834 +107,1635 @@
             </nav>
           </header>
 
-
+          <!-- Electrodomésticos -->
           <section id="electrodomesticos" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Electrodomésticos</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=600&q=80" alt="Cafetera inteligente blanca" />
+                <img
+                  src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=600&q=80"
+                  alt="Cafetera inteligente blanca"
+                />
                 <h4>Cafeteras inteligentes</h4>
+                <p>Programá tu café diario con app móvil y recordatorios.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80" alt="Aspiradora robot sobre piso de madera" />
+                <img
+                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80"
+                  alt="Aspiradora robot sobre piso de madera"
+                />
                 <h4>Aspiradoras robot</h4>
+                <p>Limpieza autónoma con mapeo láser y control remoto.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Horno eléctrico moderno en cocina" />
+                <img
+                  src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80"
+                  alt="Horno eléctrico moderno en cocina"
+                />
                 <h4>Hornos eléctricos</h4>
+                <p>Capacidad XL con funciones de convección y grill.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1616628188505-4045b6f906be?auto=format&fit=crop&w=600&q=80" alt="Freidora de aire de doble compartimiento" />
+                <img
+                  src="https://images.unsplash.com/photo-1616628188505-4045b6f906be?auto=format&fit=crop&w=600&q=80"
+                  alt="Freidora de aire de doble compartimiento"
+                />
                 <h4>Air fryers dual zone</h4>
+                <p>
+                  Cociná dos preparaciones a la vez con sensores automáticos.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1581579186983-9ff29f986065?auto=format&fit=crop&w=600&q=80" alt="Heladera inoxidable" />
+                <img
+                  src="https://images.unsplash.com/photo-1581579186983-9ff29f986065?auto=format&fit=crop&w=600&q=80"
+                  alt="Heladera inoxidable"
+                />
                 <h4>Heladeras inverter</h4>
+                <p>Compresor inverter y dispensador de agua filtrada.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1562447578-9b55f8d1f7b6?auto=format&fit=crop&w=600&q=80" alt="Microondas negro con pantalla digital" />
+                <img
+                  src="https://images.unsplash.com/photo-1562447578-9b55f8d1f7b6?auto=format&fit=crop&w=600&q=80"
+                  alt="Microondas negro con pantalla digital"
+                />
                 <h4>Microondas grill</h4>
+                <p>Programas automáticos, grill dorador y descongelado rápido.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1604335399105-a0c1e8d789a0?auto=format&fit=crop&w=600&q=80" alt="Lavasecarropas frontal" />
+                <img
+                  src="https://images.unsplash.com/photo-1604335399105-a0c1e8d789a0?auto=format&fit=crop&w=600&q=80"
+                  alt="Lavasecarropas frontal"
+                />
                 <h4>Lavasecarropas frontales</h4>
+                <p>Steam care, autodosificador y conexión WiFi.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1581578407928-4cc0b76dda9b?auto=format&fit=crop&w=600&q=80" alt="Purificador de aire minimalista" />
+                <img
+                  src="https://images.unsplash.com/photo-1581578407928-4cc0b76dda9b?auto=format&fit=crop&w=600&q=80"
+                  alt="Purificador de aire minimalista"
+                />
                 <h4>Purificadores HEPA</h4>
+                <p>
+                  Filtrado H13 con monitoreo de calidad del aire en vivo.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1582719478181-2cf4e1f5e4f6?auto=format&fit=crop&w=600&q=80" alt="Climatizador evaporativo" />
+                <img
+                  src="https://images.unsplash.com/photo-1582719478181-2cf4e1f5e4f6?auto=format&fit=crop&w=600&q=80"
+                  alt="Climatizador evaporativo"
+                />
                 <h4>Climatizadores evaporativos</h4>
+                <p>Depósito XL, ionizador y oscilación de 90 grados.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80" alt="Batidora de pie profesional" />
+                <img
+                  src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80"
+                  alt="Batidora de pie profesional"
+                />
                 <h4>Batidoras planetarias</h4>
+                <p>Motor de 1200W con bowl de acero y 8 velocidades.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80" alt="Licuadora de vaso" />
+                <img
+                  src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80"
+                  alt="Licuadora de vaso"
+                />
                 <h4>Licuadoras de alto rendimiento</h4>
+                <p>Cuchillas de acero aeronáutico y programas automáticos.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1600181954452-3c1c53c9cf5d?auto=format&fit=crop&w=600&q=80" alt="Robot de cocina" />
+                <img
+                  src="https://images.unsplash.com/photo-1600181954452-3c1c53c9cf5d?auto=format&fit=crop&w=600&q=80"
+                  alt="Robot de cocina"
+                />
                 <h4>Robots de cocina</h4>
+                <p>Chef digital con funciones de cocción y amasado guiado.</p>
               </article>
             </div>
           </section>
 
+          <!-- Tecnología -->
           <section id="tecnologia" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Tecnología</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=600&q=80" alt="Notebook ultraliviana" />
+                <img
+                  src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=600&q=80"
+                  alt="Notebook ultraliviana"
+                />
                 <h4>Notebooks ultralivianas</h4>
+                <p>Batería de 18 hs y procesadores de última generación.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1555374018-13a8994ab246?auto=format&fit=crop&w=600&q=80" alt="Tablet con teclado" />
+                <img
+                  src="https://images.unsplash.com/photo-1555374018-13a8994ab246?auto=format&fit=crop&w=600&q=80"
+                  alt="Tablet con teclado"
+                />
                 <h4>Tablets 2 en 1</h4>
+                <p>Flexibilidad total con teclado magnético y lápiz óptico.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Monitor curvo con luces" />
+                <img
+                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
+                  alt="Monitor curvo con luces"
+                />
                 <h4>Monitores curvos</h4>
+                <p>Resolución QHD y tasa de refresco de 165 Hz.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1518081461904-9ac6e671ce19?auto=format&fit=crop&w=600&q=80" alt="Smartphone plegable" />
+                <img
+                  src="https://images.unsplash.com/photo-1518081461904-9ac6e671ce19?auto=format&fit=crop&w=600&q=80"
+                  alt="Smartphone plegable"
+                />
                 <h4>Smartphones plegables</h4>
+                <p>Pantalla AMOLED 120Hz con bisagra reforzada y 5G.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Mini PC compacta" />
+                <img
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+                  alt="Mini PC compacta"
+                />
                 <h4>Mini PCs creativas</h4>
+                <p>Procesadores Ryzen serie 7000 con gráfica dedicada.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=600&q=80" alt="Router WiFi futurista" />
+                <img
+                  src="https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=600&q=80"
+                  alt="Router WiFi futurista"
+                />
                 <h4>Routers WiFi 6E</h4>
+                <p>Mesh inteligente con canales de 6 GHz y app de control.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532?auto=format&fit=crop&w=600&q=80" alt="Hub de hogar inteligente" />
+                <img
+                  src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532?auto=format&fit=crop&w=600&q=80"
+                  alt="Hub de hogar inteligente"
+                />
                 <h4>Hubs de hogar inteligente</h4>
+                <p>
+                  Controlá luces, sensores y cerraduras desde un solo lugar.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80" alt="Cámara de seguridad" />
+                <img
+                  src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80"
+                  alt="Cámara de seguridad"
+                />
                 <h4>Cámaras de seguridad</h4>
+                <p>Detección de movimiento con visión nocturna en 2K.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Impresora multifunción" />
+                <img
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+                  alt="Impresora multifunción"
+                />
                 <h4>Impresoras multifunción</h4>
+                <p>Tanques recargables con conectividad WiFi Direct.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80" alt="Disco duro externo" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80"
+                  alt="Disco duro externo"
+                />
                 <h4>Discos duros portátiles</h4>
+                <p>Hasta 5 TB con cifrado por hardware y USB-C.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1511389026070-a14ae610a1be?auto=format&fit=crop&w=600&q=80" alt="Proyector portátil" />
+                <img
+                  src="https://images.unsplash.com/photo-1511389026070-a14ae610a1be?auto=format&fit=crop&w=600&q=80"
+                  alt="Proyector portátil"
+                />
                 <h4>Proyectores portátiles</h4>
+                <p>LED 1080p con batería integrada y autoenfoque.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Gafas de realidad virtual" />
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                  alt="Gafas de realidad virtual"
+                />
                 <h4>Gafas de realidad virtual</h4>
+                <p>Controladores hápticos y seguimiento inside-out.</p>
               </article>
             </div>
           </section>
 
-
+          <!-- Auriculares & Micrófonos -->
           <section id="auriculares" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Auriculares &amp; Micrófonos</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=600&q=80" alt="Auriculares inalámbricos negros" />
+                <img
+                  src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=600&q=80"
+                  alt="Auriculares inalámbricos negros"
+                />
                 <h4>Auriculares Bluetooth</h4>
+                <p>Cancelación activa de ruido y carga rápida magnética.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=600&q=80" alt="Headset gamer" />
+                <img
+                  src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=600&q=80"
+                  alt="Headset gamer"
+                />
                 <h4>Headsets gamer</h4>
+                <p>Sonido envolvente 7.1 y micrófono con supresión.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517142089942-ba376ce32a0b?auto=format&fit=crop&w=600&q=80" alt="Micrófono de condensador" />
+                <img
+                  src="https://images.unsplash.com/photo-1517142089942-ba376ce32a0b?auto=format&fit=crop&w=600&q=80"
+                  alt="Micrófono de condensador"
+                />
                 <h4>Micrófonos de condensador</h4>
+                <p>Cardioide profesional con shock mount y filtro pop.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1505740106531-4243f3831c03?auto=format&fit=crop&w=600&q=80" alt="Auriculares true wireless" />
+                <img
+                  src="https://images.unsplash.com/photo-1505740106531-4243f3831c03?auto=format&fit=crop&w=600&q=80"
+                  alt="Auriculares true wireless"
+                />
                 <h4>True wireless premium</h4>
+                <p>Audio Hi-Res, cancelación adaptativa y modo transparencia.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Estudio de podcast" />
+                <img
+                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80"
+                  alt="Estudio de podcast"
+                />
                 <h4>Kits podcast</h4>
+                <p>Interfaces USB, brazo articulado y auriculares cerrados.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1524678714210-9917a6c619c7?auto=format&fit=crop&w=600&q=80" alt="Micrófono inalámbrico" />
+                <img
+                  src="https://images.unsplash.com/photo-1524678714210-9917a6c619c7?auto=format&fit=crop&w=600&q=80"
+                  alt="Micrófono inalámbrico"
+                />
                 <h4>Micrófonos inalámbricos</h4>
+                <p>Sistema dual con transmisión digital y clip magnético.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1522938974444-f12497b69347?auto=format&fit=crop&w=600&q=80" alt="Headset con cancelación activa" />
+                <img
+                  src="https://images.unsplash.com/photo-1522938974444-f12497b69347?auto=format&fit=crop&w=600&q=80"
+                  alt="Headset con cancelación activa"
+                />
                 <h4>Auriculares ANC over-ear</h4>
+                <p>Bluetooth multipunto y 60 hs de autonomía.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80" alt="Micrófono USB" />
+                <img
+                  src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80"
+                  alt="Micrófono USB"
+                />
                 <h4>Micrófonos USB broadcast</h4>
+                <p>RGB personalizable, monitoreo directo y mute táctil.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80" alt="Auriculares deportivos" />
+                <img
+                  src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80"
+                  alt="Auriculares deportivos"
+                />
                 <h4>Auriculares deportivos</h4>
+                <p>Diseño IP57 con fijación segura y asistente por voz.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1614680376739-414d95ff43df?auto=format&fit=crop&w=600&q=80" alt="Interfaz de audio" />
+                <img
+                  src="https://images.unsplash.com/photo-1614680376739-414d95ff43df?auto=format&fit=crop&w=600&q=80"
+                  alt="Interfaz de audio"
+                />
                 <h4>Interfaces de audio</h4>
+                <p>Previos con 70 dB de ganancia y alimentación phantom.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1458560871784-56d23406c091?auto=format&fit=crop&w=600&q=80" alt="Auriculares on-ear coloridos" />
+                <img
+                  src="https://images.unsplash.com/photo-1458560871784-56d23406c091?auto=format&fit=crop&w=600&q=80"
+                  alt="Auriculares on-ear coloridos"
+                />
                 <h4>Auriculares lifestyle</h4>
+                <p>Diseños plegables con drivers de 40 mm y BT 5.3.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" alt="Kit de streaming" />
+                <img
+                  src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80"
+                  alt="Kit de streaming"
+                />
                 <h4>Kits streaming</h4>
+                <p>
+                  Micrófono, brazo, aro de luz y tarjeta de captura incluidos.
+                </p>
               </article>
             </div>
           </section>
 
+          <!-- Accesorios para celular -->
           <section id="accesorios-celular" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Accesorios para celular</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c01?auto=format&fit=crop&w=600&q=80" alt="Fundas protectoras coloridas" />
+                <img
+                  src="https://images.unsplash.com/photo-1512499617640-c2f999098c01?auto=format&fit=crop&w=600&q=80"
+                  alt="Fundas protectoras coloridas"
+                />
                 <h4>Fundas protectoras</h4>
+                <p>Diseños antishock con bordes reforzados y MagSafe.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80" alt="Cargador rápido" />
+                <img
+                  src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80"
+                  alt="Cargador rápido"
+                />
                 <h4>Cargadores rápidos</h4>
+                <p>GaN 65W con doble puerto USB-C y cable mallado.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1603086762574-05a89857acc1?auto=format&fit=crop&w=600&q=80" alt="Protector de vidrio templado" />
+                <img
+                  src="https://images.unsplash.com/photo-1603086762574-05a89857acc1?auto=format&fit=crop&w=600&q=80"
+                  alt="Protector de vidrio templado"
+                />
                 <h4>Vidrios templados</h4>
+                <p>Protección anti-rayas con instalación sin burbujas.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=600&q=80" alt="Cargador inalámbrico" />
+                <img
+                  src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=600&q=80"
+                  alt="Cargador inalámbrico"
+                />
                 <h4>Cargadores inalámbricos</h4>
+                <p>Base rápida de 15W con indicador LED discreto.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1518544801976-3e159e80ed87?auto=format&fit=crop&w=600&q=80" alt="Batería externa" />
+                <img
+                  src="https://images.unsplash.com/photo-1518544801976-3e159e80ed87?auto=format&fit=crop&w=600&q=80"
+                  alt="Batería externa"
+                />
                 <h4>Power banks compactos</h4>
+                <p>10.000 mAh con display digital y carga pass-through.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80" alt="Dock de carga" />
+                <img
+                  src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80"
+                  alt="Dock de carga"
+                />
                 <h4>Docks de carga</h4>
+                <p>Organizá tu escritorio con puertos USB-C y USB-A.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894906472-4a439d020c74?auto=format&fit=crop&w=600&q=80" alt="Soporte magnético" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894906472-4a439d020c74?auto=format&fit=crop&w=600&q=80"
+                  alt="Soporte magnético"
+                />
                 <h4>Soportes magnéticos</h4>
+                <p>Anclaje para auto con rotación 360º y fijación segura.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="Clip de lente" />
+                <img
+                  src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80"
+                  alt="Clip de lente"
+                />
                 <h4>Kits de lentes</h4>
+                <p>Gran angular, macro y ojo de pez con clip universal.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa3?auto=format&fit=crop&w=600&q=80" alt="Aro de luz" />
+                <img
+                  src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa3?auto=format&fit=crop&w=600&q=80"
+                  alt="Aro de luz"
+                />
                 <h4>Aros de luz</h4>
+                <p>Trípode telescópico con temperatura ajustable.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1560200353-d7394bc759eb?auto=format&fit=crop&w=600&q=80" alt="Cables tejidos" />
+                <img
+                  src="https://images.unsplash.com/photo-1560200353-d7394bc759eb?auto=format&fit=crop&w=600&q=80"
+                  alt="Cables tejidos"
+                />
                 <h4>Cables reforzados</h4>
+                <p>USB-C, Lightning y Micro-USB con nylon trenzado.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1610986603168-1e4af64de682?auto=format&fit=crop&w=600&q=80" alt="Tracker bluetooth" />
+                <img
+                  src="https://images.unsplash.com/photo-1610986603168-1e4af64de682?auto=format&fit=crop&w=600&q=80"
+                  alt="Tracker bluetooth"
+                />
                 <h4>Trackers Bluetooth</h4>
+                <p>Seguimiento en app y alertas de proximidad en tiempo real.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1612198525444-096e2b9bc1d2?auto=format&fit=crop&w=600&q=80" alt="Bolso organizador" />
+                <img
+                  src="https://images.unsplash.com/photo-1612198525444-096e2b9bc1d2?auto=format&fit=crop&w=600&q=80"
+                  alt="Bolso organizador"
+                />
                 <h4>Organizadores de viaje</h4>
+                <p>Compartimentos acolchados para cables y accesorios.</p>
               </article>
             </div>
           </section>
 
-
+          <!-- Adaptadores y zapatillas -->
           <section id="adaptadores" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Adaptadores y zapatillas</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Adaptadores universales" />
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                  alt="Adaptadores universales"
+                />
                 <h4>Adaptadores universales</h4>
+                <p>Compatibles con más de 150 países y USB-C PD.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1526278310891-1e3cbb6c8be9?auto=format&fit=crop&w=600&q=80" alt="Regleta inteligente" />
+                <img
+                  src="https://images.unsplash.com/photo-1526278310891-1e3cbb6c8be9?auto=format&fit=crop&w=600&q=80"
+                  alt="Regleta inteligente"
+                />
                 <h4>Zapatillas inteligentes</h4>
+                <p>
+                  Control remoto por app, puertos USB y protección
+                  <em>surge</em>.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80" alt="Adaptador USB-C" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80"
+                  alt="Adaptador USB-C"
+                />
                 <h4>Hubs USB-C</h4>
+                <p>HDMI 4K, Ethernet, USB 3.1 y lector de tarjetas.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1563371182-a8555808f95b?auto=format&fit=crop&w=600&q=80" alt="Adaptadores enchufados" />
+                <img
+                  src="https://images.unsplash.com/photo-1563371182-a8555808f95b?auto=format&fit=crop&w=600&q=80"
+                  alt="Adaptadores enchufados"
+                />
                 <h4>Adaptadores multiplug</h4>
+                <p>Girá 360° para no ocupar espacio en enchufes contiguos.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80" alt="Cargadores USB" />
+                <img
+                  src="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80"
+                  alt="Cargadores USB"
+                />
                 <h4>Cargadores múltiples</h4>
+                <p>8 puertos USB-A/USB-C con balance inteligente de carga.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Cable Ethernet" />
+                <img
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
+                  alt="Cable Ethernet"
+                />
                 <h4>Adaptadores Ethernet</h4>
+                <p>Conectividad gigabit para notebooks ultralivianas.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1612810806695-30ba0fda8d0d?auto=format&fit=crop&w=600&q=80" alt="Regleta con USB" />
+                <img
+                  src="https://images.unsplash.com/photo-1612810806695-30ba0fda8d0d?auto=format&fit=crop&w=600&q=80"
+                  alt="Regleta con USB"
+                />
                 <h4>Zapatillas compactas</h4>
+                <p>Cables de 1,5 m, interruptor iluminado y seguro térmico.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1472220625704-91e1462799b2?auto=format&fit=crop&w=600&q=80" alt="Adaptadores apilados" />
+                <img
+                  src="https://images.unsplash.com/photo-1472220625704-91e1462799b2?auto=format&fit=crop&w=600&q=80"
+                  alt="Adaptadores apilados"
+                />
                 <h4>Duplicadores de toma</h4>
+                <p>Convertí tomas europeas en fichas argentinas al instante.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=600&q=80" alt="Conectores USB" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=600&q=80"
+                  alt="Conectores USB"
+                />
                 <h4>Adaptadores OTG</h4>
+                <p>
+                  Transferí datos de cámaras y memorias directo al móvil.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1601944170927-9dba3b6ba84e?auto=format&fit=crop&w=600&q=80" alt="Adaptador HDMI" />
+                <img
+                  src="https://images.unsplash.com/photo-1601944170927-9dba3b6ba84e?auto=format&fit=crop&w=600&q=80"
+                  alt="Adaptador HDMI"
+                />
                 <h4>Adaptadores HDMI</h4>
+                <p>Conexión mini/micro HDMI a HDMI con soporte 4K60.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1612810059943-1ffd5feb91d1?auto=format&fit=crop&w=600&q=80" alt="Cable de extensión" />
+                <img
+                  src="https://images.unsplash.com/photo-1612810059943-1ffd5feb91d1?auto=format&fit=crop&w=600&q=80"
+                  alt="Cable de extensión"
+                />
                 <h4>Extensiones reforzadas</h4>
+                <p>Cables de 3 m con protección térmica y disyuntor.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80" alt="Adaptador múltiple" />
+                <img
+                  src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80"
+                  alt="Adaptador múltiple"
+                />
                 <h4>Adaptadores de viaje</h4>
+                <p>Incluye bolsa de transporte y fusibles de repuesto.</p>
               </article>
             </div>
           </section>
 
+          <!-- Belleza & cuidado personal -->
           <section id="belleza" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Belleza &amp; cuidado personal</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Set de skincare" />
+                <img
+                  src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80"
+                  alt="Set de skincare"
+                />
                 <h4>Sets de skincare</h4>
+                <p>Rutinas completas con sueros, cremas y protector solar.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1595461135849-a87c3c61ba4a?auto=format&fit=crop&w=600&q=80" alt="Secador de pelo profesional" />
+                <img
+                  src="https://images.unsplash.com/photo-1595461135849-a87c3c61ba4a?auto=format&fit=crop&w=600&q=80"
+                  alt="Secador de pelo profesional"
+                />
                 <h4>Secadores iónicos</h4>
+                <p>Motor digital, control de temperatura y boquilla difusora.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Plancha de pelo" />
+                <img
+                  src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80"
+                  alt="Plancha de pelo"
+                />
                 <h4>Planchas cerámicas</h4>
+                <p>Placas flotantes, ionizador y apagado automático.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580130748989-68a86ebf87dc?auto=format&fit=crop&w=600&q=80" alt="Cepillo facial" />
+                <img
+                  src="https://images.unsplash.com/photo-1580130748989-68a86ebf87dc?auto=format&fit=crop&w=600&q=80"
+                  alt="Cepillo facial"
+                />
                 <h4>Cepillos sónicos</h4>
+                <p>5 modos de limpieza, silicona médica y carga magnética.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=600&q=80" alt="Máquina de afeitar" />
+                <img
+                  src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=600&q=80"
+                  alt="Máquina de afeitar"
+                />
                 <h4>Afeitadoras wet &amp; dry</h4>
+                <p>Cabezal flexible 5D con sensores de presión adaptativos.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf581?auto=format&fit=crop&w=600&q=80" alt="Kit de manicure" />
+                <img
+                  src="https://images.unsplash.com/photo-1556228578-8c89e6adf581?auto=format&fit=crop&w=600&q=80"
+                  alt="Kit de manicure"
+                />
                 <h4>Kits de manicure</h4>
+                <p>Herramientas de acero quirúrgico y estuche magnético.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80" alt="Cepillo alisador" />
+                <img
+                  src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80"
+                  alt="Cepillo alisador"
+                />
                 <h4>Cepillos alisadores</h4>
+                <p>Control digital de temperatura y cerdas cerámicas.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580884075073-4c1e82bac099?auto=format&fit=crop&w=600&q=80" alt="Masajeador facial" />
+                <img
+                  src="https://images.unsplash.com/photo-1580884075073-4c1e82bac099?auto=format&fit=crop&w=600&q=80"
+                  alt="Masajeador facial"
+                />
                 <h4>Masajeadores faciales</h4>
+                <p>Microcorrientes rejuvenecedoras con terapia LED.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Set de brochas de maquillaje" />
+                <img
+                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80"
+                  alt="Set de brochas de maquillaje"
+                />
                 <h4>Brochas premium</h4>
+                <p>Fibras veganas ultrasuaves y mangos de madera.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Balanza corporal" />
+                <img
+                  src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80"
+                  alt="Balanza corporal"
+                />
                 <h4>Balanzas inteligentes</h4>
+                <p>Analiza 13 métricas corporales con app móvil.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1600180758890-6d9c605f0ef7?auto=format&fit=crop&w=600&q=80" alt="Depiladora láser" />
+                <img
+                  src="https://images.unsplash.com/photo-1600180758890-6d9c605f0ef7?auto=format&fit=crop&w=600&q=80"
+                  alt="Depiladora láser"
+                />
                 <h4>Depiladoras IPL</h4>
+                <p>Sensor de tono de piel y 5 niveles de intensidad.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1508184964240-ee27485aa4f2?auto=format&fit=crop&w=600&q=80" alt="Difusor de aromas" />
+                <img
+                  src="https://images.unsplash.com/photo-1508184964240-ee27485aa4f2?auto=format&fit=crop&w=600&q=80"
+                  alt="Difusor de aromas"
+                />
                 <h4>Difusores de aromas</h4>
+                <p>Bruma fría, temporizador y luces cálidas relajantes.</p>
               </article>
             </div>
           </section>
 
-
+          <!-- Herramientas, cables red & HDMI -->
           <section id="herramientas" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Herramientas, cables red &amp; HDMI</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Set de herramientas" />
+                <img
+                  src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80"
+                  alt="Set de herramientas"
+                />
                 <h4>Kits de herramientas</h4>
+                <p>Maletín con llaves, puntas y destornilladores magnéticos.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=600&q=80" alt="Rollos de cable de red" />
+                <img
+                  src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=600&q=80"
+                  alt="Rollos de cable de red"
+                />
                 <h4>Cables Ethernet Cat 7</h4>
+                <p>Blindaje doble, 10 Gbps y conectores chapados en oro.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Cable HDMI" />
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+                  alt="Cable HDMI"
+                />
                 <h4>Cables HDMI 2.1</h4>
+                <p>8K60, VRR y certificación Ultra High Speed.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1555617981-dac3880c6402?auto=format&fit=crop&w=600&q=80" alt="Tester de red" />
+                <img
+                  src="https://images.unsplash.com/photo-1555617981-dac3880c6402?auto=format&fit=crop&w=600&q=80"
+                  alt="Tester de red"
+                />
                 <h4>Testers de red</h4>
+                <p>Detección PoE, mapa de cables y monitoreo continuo.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=600&q=80" alt="Crimpadora" />
+                <img
+                  src="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=600&q=80"
+                  alt="Crimpadora"
+                />
                 <h4>Crimpadoras profesionales</h4>
+                <p>Cuchillas reemplazables y agarre ergonómico.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Cable USB" />
+                <img
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
+                  alt="Cable USB"
+                />
                 <h4>Cables USB industriales</h4>
+                <p>Revestimiento de kevlar y conectores reforzados.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80" alt="Organizador" />
+                <img
+                  src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80"
+                  alt="Organizador"
+                />
                 <h4>Organizadores de cables</h4>
+                <p>Cintas de velcro, clips adhesivos y canaletas flexibles.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=600&q=80" alt="Caja de herramientas" />
+                <img
+                  src="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=600&q=80"
+                  alt="Caja de herramientas"
+                />
                 <h4>Cajas modulares</h4>
+                <p>Compartimentos personalizables y asa plegable.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894906472-4a439d020c74?auto=format&fit=crop&w=600&q=80" alt="Conectores RJ45" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894906472-4a439d020c74?auto=format&fit=crop&w=600&q=80"
+                  alt="Conectores RJ45"
+                />
                 <h4>Conectores RJ45</h4>
+                <p>
+                  Compatibles con cables sólidos y flexibles categoría 6A.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80" alt="Extensor HDMI" />
+                <img
+                  src="https://images.unsplash.com/photo-1582719478250-09d526378963?auto=format&fit=crop&w=600&q=80"
+                  alt="Extensor HDMI"
+                />
                 <h4>Extensores HDMI</h4>
+                <p>
+                  Transmisión de 60 m por cable de red con IR integrado.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80" alt="Bobina de cable coaxial" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80"
+                  alt="Bobina de cable coaxial"
+                />
                 <h4>Cables coaxiales</h4>
+                <p>Baja pérdida, núcleo de cobre y triple blindaje.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1564865878688-e4fdf0f35f43?auto=format&fit=crop&w=600&q=80" alt="Tester de cables" />
+                <img
+                  src="https://images.unsplash.com/photo-1564865878688-e4fdf0f35f43?auto=format&fit=crop&w=600&q=80"
+                  alt="Tester de cables"
+                />
                 <h4>Probadores multifunción</h4>
+                <p>
+                  Verifica continuidad, voltaje y secuencia en segundos.
+                </p>
               </article>
             </div>
           </section>
 
+          <!-- Calculadoras & pilas -->
           <section id="calculadoras" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Calculadoras &amp; pilas</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" alt="Calculadora científica" />
+                <img
+                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80"
+                  alt="Calculadora científica"
+                />
                 <h4>Calculadoras científicas</h4>
+                <p>Pantalla natural, 552 funciones y modo examen.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1503389152951-9f343605f61e?auto=format&fit=crop&w=600&q=80" alt="Calculadora financiera" />
+                <img
+                  src="https://images.unsplash.com/photo-1503389152951-9f343605f61e?auto=format&fit=crop&w=600&q=80"
+                  alt="Calculadora financiera"
+                />
                 <h4>Calculadoras financieras</h4>
+                <p>Flujos de caja, amortizaciones y teclado táctil.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=600&q=80" alt="Calculadora de escritorio" />
+                <img
+                  src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=600&q=80"
+                  alt="Calculadora de escritorio"
+                />
                 <h4>Calculadoras de escritorio</h4>
+                <p>Teclas silenciosas, doble alimentación y pantalla XL.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894906639-250c1d37c174?auto=format&fit=crop&w=600&q=80" alt="Pack de pilas" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894906639-250c1d37c174?auto=format&fit=crop&w=600&q=80"
+                  alt="Pack de pilas"
+                />
                 <h4>Pilas alcalinas AA/AAA</h4>
+                <p>Hasta 10 años de vida útil y rendimiento constante.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1565375816081-031a56ba9786?auto=format&fit=crop&w=600&q=80" alt="Cargador de pilas" />
+                <img
+                  src="https://images.unsplash.com/photo-1565375816081-031a56ba9786?auto=format&fit=crop&w=600&q=80"
+                  alt="Cargador de pilas"
+                />
                 <h4>Cargadores de pilas</h4>
+                <p>Detección automática de carga y pantalla LCD.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1611599538297-1c06a6685e2e?auto=format&fit=crop&w=600&q=80" alt="Pilas botón" />
+                <img
+                  src="https://images.unsplash.com/photo-1611599538297-1c06a6685e2e?auto=format&fit=crop&w=600&q=80"
+                  alt="Pilas botón"
+                />
                 <h4>Pilas botón</h4>
+                <p>Compatibles con relojes, llaves inteligentes y balanzas.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1565375816081-031a56ba9786?auto=format&fit=crop&w=600&q=80" alt="Pilas recargables" />
+                <img
+                  src="https://images.unsplash.com/photo-1565375816081-031a56ba9786?auto=format&fit=crop&w=600&q=80"
+                  alt="Pilas recargables"
+                />
                 <h4>Pilas recargables</h4>
+                <p>NiMH de alta capacidad y baja autodescarga.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=600&q=80" alt="Calculadora gráfica" />
+                <img
+                  src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=600&q=80"
+                  alt="Calculadora gráfica"
+                />
                 <h4>Calculadoras gráficas</h4>
+                <p>Pantalla a color, programación y conectividad USB.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1571677246347-5040036b95ee?auto=format&fit=crop&w=600&q=80" alt="Calculadora escolar" />
+                <img
+                  src="https://images.unsplash.com/photo-1571677246347-5040036b95ee?auto=format&fit=crop&w=600&q=80"
+                  alt="Calculadora escolar"
+                />
                 <h4>Calculadoras escolares</h4>
+                <p>Diseños compactos, teclas ergonómicas y funda rígida.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894748853-20c8cd30f2d0?auto=format&fit=crop&w=600&q=80" alt="Pack de pilas recargables" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894748853-20c8cd30f2d0?auto=format&fit=crop&w=600&q=80"
+                  alt="Pack de pilas recargables"
+                />
                 <h4>Combos de pilas</h4>
+                <p>Kit mixto AA/AAA con cargador inteligente incluido.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=600&q=80" alt="Calculadora solar" />
+                <img
+                  src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=600&q=80"
+                  alt="Calculadora solar"
+                />
                 <h4>Calculadoras solares</h4>
+                <p>Encendido automático y panel solar de alto rendimiento.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1529338296731-c4280a4f53c7?auto=format&fit=crop&w=600&q=80" alt="Organizador de pilas" />
+                <img
+                  src="https://images.unsplash.com/photo-1529338296731-c4280a4f53c7?auto=format&fit=crop&w=600&q=80"
+                  alt="Organizador de pilas"
+                />
                 <h4>Organizadores de pilas</h4>
+                <p>Estuche ignífugo con medidor de carga integrado.</p>
               </article>
             </div>
           </section>
 
-
+          <!-- Computación & gaming -->
           <section id="computacion" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Computación &amp; gaming</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Setup gamer" />
+                <img
+                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
+                  alt="Setup gamer"
+                />
                 <h4>PC gamers</h4>
+                <p>RTX serie 40, refrigeración líquida y almacenamiento NVMe.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=600&q=80" alt="Notebook gamer" />
+                <img
+                  src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=600&q=80"
+                  alt="Notebook gamer"
+                />
                 <h4>Laptops gamer</h4>
+                <p>144 Hz, teclado RGB por tecla y audio envolvente.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1587202372775-98927f56d1d0?auto=format&fit=crop&w=600&q=80" alt="Teclado mecánico" />
+                <img
+                  src="https://images.unsplash.com/photo-1587202372775-98927f56d1d0?auto=format&fit=crop&w=600&q=80"
+                  alt="Teclado mecánico"
+                />
                 <h4>Teclados mecánicos</h4>
+                <p>Switches hot-swap, espuma acústica y macros dedicadas.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Mouse gamer" />
+                <img
+                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
+                  alt="Mouse gamer"
+                />
                 <h4>Mouses inalámbricos</h4>
+                <p>Sensor 26K DPI, modo 4K Hz y peso ultraligero.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=600&q=80" alt="Silla gamer" />
+                <img
+                  src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=600&q=80"
+                  alt="Silla gamer"
+                />
                 <h4>Sillas ergonómicas</h4>
+                <p>Soporte lumbar 4D, reclinación 155° y tapizado híbrido.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?auto=format&fit=crop&w=600&q=80" alt="Placa de video" />
+                <img
+                  src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?auto=format&fit=crop&w=600&q=80"
+                  alt="Placa de video"
+                />
                 <h4>Placas de video</h4>
+                <p>Ray tracing de tercera generación y DLSS 3.5.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1516223725307-06f6f1e3ed0c?auto=format&fit=crop&w=600&q=80" alt="Auriculares gaming" />
+                <img
+                  src="https://images.unsplash.com/photo-1516223725307-06f6f1e3ed0c?auto=format&fit=crop&w=600&q=80"
+                  alt="Auriculares gaming"
+                />
                 <h4>Auriculares surround</h4>
+                <p>Audio espacial y micrófono con cancelación activa.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1587202372775-98927f56d1d0?auto=format&fit=crop&w=600&q=80" alt="Mousepad RGB" />
+                <img
+                  src="https://images.unsplash.com/photo-1587202372775-98927f56d1d0?auto=format&fit=crop&w=600&q=80"
+                  alt="Mousepad RGB"
+                />
                 <h4>Mousepads XL</h4>
+                <p>
+                  Superficie híbrida, base antideslizante y RGB addressable.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92eee?auto=format&fit=crop&w=600&q=80" alt="Gabinete gamer" />
+                <img
+                  src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92eee?auto=format&fit=crop&w=600&q=80"
+                  alt="Gabinete gamer"
+                />
                 <h4>Gabinetes airflow</h4>
+                <p>Panel de malla, vidrio templado y soporte radiador 360.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=600&q=80" alt="Memoria RAM" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=600&q=80"
+                  alt="Memoria RAM"
+                />
                 <h4>Memorias DDR5</h4>
+                <p>6000 MHz CL32 con perfiles Intel XMP y AMD EXPO.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1555617117-08ba7fa2734c?auto=format&fit=crop&w=600&q=80" alt="Consola de videojuegos" />
+                <img
+                  src="https://images.unsplash.com/photo-1555617117-08ba7fa2734c?auto=format&fit=crop&w=600&q=80"
+                  alt="Consola de videojuegos"
+                />
                 <h4>Consolas next-gen</h4>
+                <p>Ray tracing, Quick Resume y catálogo Game Pass.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894897381-6034dd3477dd?auto=format&fit=crop&w=600&q=80" alt="Volante de simulación" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894897381-6034dd3477dd?auto=format&fit=crop&w=600&q=80"
+                  alt="Volante de simulación"
+                />
                 <h4>Sim racing kits</h4>
+                <p>Volante direct drive, pedales magnéticos y shifter.</p>
               </article>
             </div>
           </section>
 
+          <!-- Juguetes, deco, bazar & termos -->
           <section id="juguetes" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Juguetes, deco, bazar &amp; termos</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=600&q=80" alt="Bloques de construcción" />
+                <img
+                  src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=600&q=80"
+                  alt="Bloques de construcción"
+                />
                 <h4>Sets de construcción</h4>
+                <p>Bloques creativos con guías paso a paso y app 3D.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1484542603127-984f4f7d14cb?auto=format&fit=crop&w=600&q=80" alt="Juego de mesa" />
+                <img
+                  src="https://images.unsplash.com/photo-1484542603127-984f4f7d14cb?auto=format&fit=crop&w=600&q=80"
+                  alt="Juego de mesa"
+                />
                 <h4>Juegos de mesa</h4>
+                <p>Ediciones familiares cooperativas y competitivas.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?auto=format&fit=crop&w=600&q=80" alt="Decoración de living" />
+                <img
+                  src="https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?auto=format&fit=crop&w=600&q=80"
+                  alt="Decoración de living"
+                />
                 <h4>Decoración minimalista</h4>
+                <p>Jarrones, cuadros y textiles con tonos neutros.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80" alt="Termo mate" />
+                <img
+                  src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80"
+                  alt="Termo mate"
+                />
                 <h4>Termos premium</h4>
+                <p>Acero inoxidable, tapa mate y pico vertedor 360°.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=600&q=80" alt="Lámpara decorativa" />
+                <img
+                  src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=600&q=80"
+                  alt="Lámpara decorativa"
+                />
                 <h4>Lámparas decorativas</h4>
+                <p>Luces cálidas con regulación táctil y USB-C.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1530133532239-ecd74e0b3d4d?auto=format&fit=crop&w=600&q=80" alt="Cocina de juguete" />
+                <img
+                  src="https://images.unsplash.com/photo-1530133532239-ecd74e0b3d4d?auto=format&fit=crop&w=600&q=80"
+                  alt="Cocina de juguete"
+                />
                 <h4>Juguetes de rol</h4>
+                <p>Sets de cocina, herramientas y consultorio pediátrico.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&w=600&q=80" alt="Vajilla moderna" />
+                <img
+                  src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&w=600&q=80"
+                  alt="Vajilla moderna"
+                />
                 <h4>Vajilla moderna</h4>
+                <p>Piezas de cerámica esmaltada con diseño artesanal.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1523365280197-f1783db9fe62?auto=format&fit=crop&w=600&q=80" alt="Set de té" />
+                <img
+                  src="https://images.unsplash.com/photo-1523365280197-f1783db9fe62?auto=format&fit=crop&w=600&q=80"
+                  alt="Set de té"
+                />
                 <h4>Sets de té</h4>
+                <p>Porcelana de doble pared y coladores de acero.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1578894381168-1de6e70429d1?auto=format&fit=crop&w=600&q=80" alt="Decoración navideña" />
+                <img
+                  src="https://images.unsplash.com/photo-1578894381168-1de6e70429d1?auto=format&fit=crop&w=600&q=80"
+                  alt="Decoración navideña"
+                />
                 <h4>Deco estacional</h4>
+                <p>Guirnaldas LED, adornos y manteles temáticos.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1530133532239-ecd74e0b3d4d?auto=format&fit=crop&w=600&q=80" alt="Juguete didáctico" />
+                <img
+                  src="https://images.unsplash.com/photo-1530133532239-ecd74e0b3d4d?auto=format&fit=crop&w=600&q=80"
+                  alt="Juguete didáctico"
+                />
                 <h4>Juguetes STEM</h4>
+                <p>Kits de robótica, circuitos y programación visual.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1455853659719-4b521eebc76d?auto=format&fit=crop&w=600&q=80" alt="Organizador de cocina" />
+                <img
+                  src="https://images.unsplash.com/photo-1455853659719-4b521eebc76d?auto=format&fit=crop&w=600&q=80"
+                  alt="Organizador de cocina"
+                />
                 <h4>Organización de cocina</h4>
+                <p>Dispensers herméticos, especieros y cajones modulares.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=600&q=80" alt="Peluches" />
+                <img
+                  src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=600&q=80"
+                  alt="Peluches"
+                />
                 <h4>Peluches premium</h4>
+                <p>Material hipoalergénico y diseños coleccionables.</p>
               </article>
             </div>
           </section>
 
-
+          <!-- LED veladores & iluminación -->
           <section id="iluminacion" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>LED veladores &amp; iluminación</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="Velador LED" />
+                <img
+                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80"
+                  alt="Velador LED"
+                />
                 <h4>Veladores táctiles</h4>
+                <p>
+                  Control táctil, USB-C y modos cálido, neutro y frío.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=600&q=80" alt="Tiras LED" />
+                <img
+                  src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=600&q=80"
+                  alt="Tiras LED"
+                />
                 <h4>Tiras LED RGBIC</h4>
+                <p>
+                  Escenas dinámicas, sincronización musical y control por voz.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=600&q=80" alt="Lámpara colgante" />
+                <img
+                  src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=600&q=80"
+                  alt="Lámpara colgante"
+                />
                 <h4>Lámparas colgantes</h4>
+                <p>Diseños geométricos con acabado metálico mate.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=600&q=80" alt="Foco inteligente" />
+                <img
+                  src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=600&q=80"
+                  alt="Foco inteligente"
+                />
                 <h4>Bombillas inteligentes</h4>
+                <p>Control remoto desde app y escenarios automatizados.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80" alt="Lámparas de escritorio" />
+                <img
+                  src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80"
+                  alt="Lámparas de escritorio"
+                />
                 <h4>Lámparas de escritorio</h4>
+                <p>Iluminación uniforme con brazo articulado y USB.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80" alt="Lámpara industrial" />
+                <img
+                  src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80"
+                  alt="Lámpara industrial"
+                />
                 <h4>Apliques industriales</h4>
+                <p>
+                  Acabado en bronce, cabezal orientable y LED integrado.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=600&q=80" alt="Guirnalda luminosa" />
+                <img
+                  src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=600&q=80"
+                  alt="Guirnalda luminosa"
+                />
                 <h4>Guirnaldas cálidas</h4>
+                <p>
+                  Microleds sobre alambre moldeable para interior y exterior.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&w=600&q=80" alt="Panel LED" />
+                <img
+                  src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&w=600&q=80"
+                  alt="Panel LED"
+                />
                 <h4>Paneles LED ultrafinos</h4>
+                <p>Instalación en cielorraso, driver slim y difusor opalino.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80" alt="Lamparita vintage" />
+                <img
+                  src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80"
+                  alt="Lamparita vintage"
+                />
                 <h4>Bombillas vintage</h4>
+                <p>
+                  Filamento LED cálido con vidrio ámbar de alta eficiencia.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80" alt="Lámpara de pie" />
+                <img
+                  src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80"
+                  alt="Lámpara de pie"
+                />
                 <h4>Lámparas de pie</h4>
+                <p>
+                  Diseños regulables con pantallas textiles intercambiables.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0c6ab76?auto=format&fit=crop&w=600&q=80" alt="Aplique exterior" />
+                <img
+                  src="https://images.unsplash.com/photo-1533089860892-a7c6f0c6ab76?auto=format&fit=crop&w=600&q=80"
+                  alt="Aplique exterior"
+                />
                 <h4>Iluminación exterior</h4>
+                <p>IP65, sensor crepuscular y materiales anticorrosivos.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80" alt="Lámpara LED" />
+                <img
+                  src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80"
+                  alt="Lámpara LED"
+                />
                 <h4>Lámparas smart</h4>
+                <p>Integración con asistentes de voz y automatizaciones.</p>
               </article>
             </div>
           </section>
 
+          <!-- Parlantes & sonido -->
           <section id="parlantes" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Parlantes &amp; sonido</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=600&q=80" alt="Parlante bluetooth" />
+                <img
+                  src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=600&q=80"
+                  alt="Parlante bluetooth"
+                />
                 <h4>Parlantes Bluetooth</h4>
+                <p>Resistencia IP67, 24 hs de batería y emparejamiento dual.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34c?auto=format&fit=crop&w=600&q=80" alt="Barra de sonido" />
+                <img
+                  src="https://images.unsplash.com/photo-1581276879432-15e50529f34c?auto=format&fit=crop&w=600&q=80"
+                  alt="Barra de sonido"
+                />
                 <h4>Barras de sonido</h4>
+                <p>
+                  Dolby Atmos, subwoofer inalámbrico y asistentes de voz.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Parlantes de escritorio" />
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+                  alt="Parlantes de escritorio"
+                />
                 <h4>Monitores de estudio</h4>
+                <p>Respuesta plana, entradas balanceadas y control de tono.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1511396279663-6a47c1bafc70?auto=format&fit=crop&w=600&q=80" alt="Auriculares hifi" />
+                <img
+                  src="https://images.unsplash.com/photo-1511396279663-6a47c1bafc70?auto=format&fit=crop&w=600&q=80"
+                  alt="Auriculares hifi"
+                />
                 <h4>Auriculares Hi-Fi</h4>
+                <p>Drivers planares magnéticos y cable balanceado.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Subwoofer" />
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                  alt="Subwoofer"
+                />
                 <h4>Subwoofers activos</h4>
+                <p>12&quot; con 500W RMS y corrección acústica automática.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80" alt="Tocadiscos" />
+                <img
+                  src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80"
+                  alt="Tocadiscos"
+                />
                 <h4>Tocadiscos automáticos</h4>
+                <p>Brazo de carbono, preamplificador integrado y USB.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1516750105099-4f8c0cc1c0b0?auto=format&fit=crop&w=600&q=80" alt="Sistema de audio" />
+                <img
+                  src="https://images.unsplash.com/photo-1516750105099-4f8c0cc1c0b0?auto=format&fit=crop&w=600&q=80"
+                  alt="Sistema de audio"
+                />
                 <h4>Sistemas multisala</h4>
+                <p>Streaming WiFi, AirPlay 2 y sincronización por zonas.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=600&q=80" alt="Parlantes portátiles" />
+                <img
+                  src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=600&q=80"
+                  alt="Parlantes portátiles"
+                />
                 <h4>Parlantes outdoor</h4>
+                <p>Diseño portátil, protección IPX7 y luces ambientales.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Receptor AV" />
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+                  alt="Receptor AV"
+                />
                 <h4>Receivers AV</h4>
+                <p>HDMI 2.1, compatibilidad eARC y calibración automática.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1471478331149-c72f17e33c73?auto=format&fit=crop&w=600&q=80" alt="Bafle profesional" />
+                <img
+                  src="https://images.unsplash.com/photo-1471478331149-c72f17e33c73?auto=format&fit=crop&w=600&q=80"
+                  alt="Bafle profesional"
+                />
                 <h4>Sonido profesional</h4>
+                <p>
+                  Columnas activas, mezcladores y micrófonos inalámbricos.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80" alt="Barra de sonido compacta" />
+                <img
+                  src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80"
+                  alt="Barra de sonido compacta"
+                />
                 <h4>Mini barras compactas</h4>
+                <p>
+                  Conexión HDMI ARC, bluetooth 5.1 y modo nocturno.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1458560871784-56d23406c091?auto=format&fit=crop&w=600&q=80" alt="Amplificador" />
+                <img
+                  src="https://images.unsplash.com/photo-1458560871784-56d23406c091?auto=format&fit=crop&w=600&q=80"
+                  alt="Amplificador"
+                />
                 <h4>Amplificadores integrados</h4>
+                <p>
+                  DAC de alta resolución, Bluetooth aptX HD y phono MM.
+                </p>
               </article>
             </div>
           </section>
 
+          <!-- Pendrives y memorias -->
           <section id="pendrives" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Pendrives y memorias</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80" alt="Pendrive metálico" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80"
+                  alt="Pendrive metálico"
+                />
                 <h4>Pendrives USB 3.2</h4>
+                <p>Lectura de 400 MB/s con carcasa metálica y loop.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1527434006474-0d7a3c1788f6?auto=format&fit=crop&w=600&q=80" alt="Tarjetas microSD" />
+                <img
+                  src="https://images.unsplash.com/photo-1527434006474-0d7a3c1788f6?auto=format&fit=crop&w=600&q=80"
+                  alt="Tarjetas microSD"
+                />
                 <h4>Tarjetas microSD</h4>
+                <p>
+                  Velocidad V30 para 4K, adaptador SD y garantía 10 años.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80" alt="Pendrive doble" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80"
+                  alt="Pendrive doble"
+                />
                 <h4>OTG dual</h4>
+                <p>
+                  Conectores USB-C y USB-A para transferencias rápidas.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1527434006474-0d7a3c1788f6?auto=format&fit=crop&w=600&q=80" alt="Tarjeta SD profesional" />
+                <img
+                  src="https://images.unsplash.com/photo-1527434006474-0d7a3c1788f6?auto=format&fit=crop&w=600&q=80"
+                  alt="Tarjeta SD profesional"
+                />
                 <h4>Tarjetas SD UHS-II</h4>
+                <p>
+                  300 MB/s ideales para cámaras mirrorless y vídeo 8K.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1555617981-dac3880c6402?auto=format&fit=crop&w=600&q=80" alt="Disco SSD" />
+                <img
+                  src="https://images.unsplash.com/photo-1555617981-dac3880c6402?auto=format&fit=crop&w=600&q=80"
+                  alt="Disco SSD"
+                />
                 <h4>SSD portátiles</h4>
+                <p>NVMe de 1050 MB/s, resistencia IP55 y cifrado AES.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1555375771-14b2a63968f0?auto=format&fit=crop&w=600&q=80" alt="Pendrive colorido" />
+                <img
+                  src="https://images.unsplash.com/photo-1555375771-14b2a63968f0?auto=format&fit=crop&w=600&q=80"
+                  alt="Pendrive colorido"
+                />
                 <h4>Pendrives giratorios</h4>
+                <p>
+                  Cuerpo de aluminio, loop metálico y software de backup.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1518081461904-9ac6e671ce19?auto=format&fit=crop&w=600&q=80" alt="Unidad flash" />
+                <img
+                  src="https://images.unsplash.com/photo-1518081461904-9ac6e671ce19?auto=format&fit=crop&w=600&q=80"
+                  alt="Unidad flash"
+                />
                 <h4>Flash criptosegura</h4>
+                <p>Protección con PIN y cifrado por hardware FIPS.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1527434006474-0d7a3c1788f6?auto=format&fit=crop&w=600&q=80" alt="Tarjeta CFexpress" />
+                <img
+                  src="https://images.unsplash.com/photo-1527434006474-0d7a3c1788f6?auto=format&fit=crop&w=600&q=80"
+                  alt="Tarjeta CFexpress"
+                />
                 <h4>Tarjetas CFexpress</h4>
+                <p>Rendimiento 1700 MB/s para cámaras de cine digital.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80" alt="Pendrive resistente" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80"
+                  alt="Pendrive resistente"
+                />
                 <h4>Pendrives rugerizados</h4>
+                <p>IP68, resistencia a golpes y garantía de por vida.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1555617981-dac3880c6402?auto=format&fit=crop&w=600&q=80" alt="Case SSD" />
+                <img
+                  src="https://images.unsplash.com/photo-1555617981-dac3880c6402?auto=format&fit=crop&w=600&q=80"
+                  alt="Case SSD"
+                />
                 <h4>Enclosures NVMe</h4>
+                <p>USB 3.2 Gen2x2 con disipador de aluminio integrado.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80" alt="Pendrive mini" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894748791-557858bc5cc5?auto=format&fit=crop&w=600&q=80"
+                  alt="Pendrive mini"
+                />
                 <h4>Pendrives mini</h4>
+                <p>Formato ultracompacto ideal para autos y Smart TV.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1527434006474-0d7a3c1788f6?auto=format&fit=crop&w=600&q=80" alt="Tarjetas de memoria" />
+                <img
+                  src="https://images.unsplash.com/photo-1527434006474-0d7a3c1788f6?auto=format&fit=crop&w=600&q=80"
+                  alt="Tarjetas de memoria"
+                />
                 <h4>Bundles creativos</h4>
+                <p>Combo de memorias, lector USB-C y estuche rígido.</p>
               </article>
             </div>
           </section>
 
-
+          <!-- Reloj & smartwatch -->
           <section id="relojes" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Reloj &amp; smartwatch</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80" alt="Smartwatch premium" />
+                <img
+                  src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80"
+                  alt="Smartwatch premium"
+                />
                 <h4>Smartwatches premium</h4>
+                <p>
+                  Pantalla AMOLED always-on, ECG y batería de 10 días.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1461141346587-763ab02bced9?auto=format&fit=crop&w=600&q=80" alt="Reloj clásico" />
+                <img
+                  src="https://images.unsplash.com/photo-1461141346587-763ab02bced9?auto=format&fit=crop&w=600&q=80"
+                  alt="Reloj clásico"
+                />
                 <h4>Relojes analógicos</h4>
+                <p>Movimiento japonés, cristal zafiro y resistencia 10 ATM.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1503236823255-94609f598e71?auto=format&fit=crop&w=600&q=80" alt="Smartband" />
+                <img
+                  src="https://images.unsplash.com/photo-1503236823255-94609f598e71?auto=format&fit=crop&w=600&q=80"
+                  alt="Smartband"
+                />
                 <h4>Smartbands fitness</h4>
+                <p>Monitoreo continuo de ritmo, sueño y oxígeno en sangre.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Reloj deportivo" />
+                <img
+                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80"
+                  alt="Reloj deportivo"
+                />
                 <h4>Relojes deportivos</h4>
+                <p>GPS dual, métricas avanzadas y mapas offline.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1445053023192-8d45cb66099c?auto=format&fit=crop&w=600&q=80" alt="Smartwatch con correa" />
+                <img
+                  src="https://images.unsplash.com/photo-1445053023192-8d45cb66099c?auto=format&fit=crop&w=600&q=80"
+                  alt="Smartwatch con correa"
+                />
                 <h4>Correas intercambiables</h4>
+                <p>
+                  Cuero, fluoroelastómero y acero inoxidable en todos los
+                  tamaños.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=600&q=80" alt="Cargador magnético" />
+                <img
+                  src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=600&q=80"
+                  alt="Cargador magnético"
+                />
                 <h4>Cargadores magnéticos</h4>
+                <p>Carga rápida con USB-C y base antideslizante.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80" alt="Smartwatch" />
+                <img
+                  src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80"
+                  alt="Smartwatch"
+                />
                 <h4>Smartwatches kids</h4>
+                <p>Geolocalización, llamadas seguras y alertas escolares.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80" alt="Reloj elegante" />
+                <img
+                  src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+                  alt="Reloj elegante"
+                />
                 <h4>Relojes dress</h4>
+                <p>Cajas ultrafinas, correas italianas y detalles en relieve.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1461141346587-763ab02bced9?auto=format&fit=crop&w=600&q=80" alt="Reloj inteligente" />
+                <img
+                  src="https://images.unsplash.com/photo-1461141346587-763ab02bced9?auto=format&fit=crop&w=600&q=80"
+                  alt="Reloj inteligente"
+                />
                 <h4>Smartwatches LTE</h4>
+                <p>eSIM integrada, pagos sin contacto y música offline.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80" alt="Accesorios para reloj" />
+                <img
+                  src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80"
+                  alt="Accesorios para reloj"
+                />
                 <h4>Accesorios smartwatch</h4>
+                <p>Protectores, bases y estuches rígidos personalizados.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80" alt="Reloj clásico" />
+                <img
+                  src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+                  alt="Reloj clásico"
+                />
                 <h4>Relojes automáticos</h4>
+                <p>
+                  Calibres suizos, reserva de marcha 80h y zafiro abombado.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1461141346587-763ab02bced9?auto=format&fit=crop&w=600&q=80" alt="Reloj para deportes" />
+                <img
+                  src="https://images.unsplash.com/photo-1461141346587-763ab02bced9?auto=format&fit=crop&w=600&q=80"
+                  alt="Reloj para deportes"
+                />
                 <h4>Wearables outdoor</h4>
+                <p>
+                  Barómetro, altímetro y autonomía extendida hasta 30 días.
+                </p>
               </article>
             </div>
           </section>
 
+          <!-- Soportes & holders -->
           <section id="soportes" class="category">
             <p class="category__eyebrow">Catálogo por categorías</p>
             <h3>Soportes &amp; holders</h3>
             <div class="products">
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1526178610350-0d3de3cddb84?auto=format&fit=crop&w=600&q=80" alt="Soporte de monitor" />
+                <img
+                  src="https://images.unsplash.com/photo-1526178610350-0d3de3cddb84?auto=format&fit=crop&w=600&q=80"
+                  alt="Soporte de monitor"
+                />
                 <h4>Brazos para monitor</h4>
+                <p>Ajuste completo, gestión de cables y soporte hasta 32".</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894896813-39e68a32b877?auto=format&fit=crop&w=600&q=80" alt="Soporte de celular" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894896813-39e68a32b877?auto=format&fit=crop&w=600&q=80"
+                  alt="Soporte de celular"
+                />
                 <h4>Holders para auto</h4>
+                <p>Sujeción magnética, carga inalámbrica y rotación 360°.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="Trípode" />
+                <img
+                  src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80"
+                  alt="Trípode"
+                />
                 <h4>Trípodes compactos</h4>
+                <p>
+                  Aluminio liviano, cabezal ball head y bolso de transporte.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80" alt="Soporte de auriculares" />
+                <img
+                  src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80"
+                  alt="Soporte de auriculares"
+                />
                 <h4>Soportes para auriculares</h4>
+                <p>
+                  Base de aluminio con pad antideslizante y hub USB.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1527434006474-0d7a3c1788f6?auto=format&fit=crop&w=600&q=80" alt="Soporte de notebook" />
+                <img
+                  src="https://images.unsplash.com/photo-1527434006474-0d7a3c1788f6?auto=format&fit=crop&w=600&q=80"
+                  alt="Soporte de notebook"
+                />
                 <h4>Elevadores de notebook</h4>
+                <p>
+                  Altura regulable, ventilación pasiva y plegado rápido.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1599244980171-5eff35931247?auto=format&fit=crop&w=600&q=80" alt="Soporte mural" />
+                <img
+                  src="https://images.unsplash.com/photo-1599244980171-5eff35931247?auto=format&fit=crop&w=600&q=80"
+                  alt="Soporte mural"
+                />
                 <h4>Soportes TV articulados</h4>
+                <p>
+                  VESA 200-600, brazo extensible y nivelación
+                  microajustable.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1580894906639-250c1d37c174?auto=format&fit=crop&w=600&q=80" alt="Soporte para cámaras" />
+                <img
+                  src="https://images.unsplash.com/photo-1580894906639-250c1d37c174?auto=format&fit=crop&w=600&q=80"
+                  alt="Soporte para cámaras"
+                />
                 <h4>Mounts para cámaras</h4>
+                <p>Zapatas universales, clamps y brazos articulados.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="Soporte flexible" />
+                <img
+                  src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80"
+                  alt="Soporte flexible"
+                />
                 <h4>Soportes flexibles</h4>
+                <p>Cuello de ganso reforzado y pinza acolchada.</p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa3?auto=format&fit=crop&w=600&q=80" alt="Trípode ring light" />
+                <img
+                  src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa3?auto=format&fit=crop&w=600&q=80"
+                  alt="Trípode ring light"
+                />
                 <h4>Kits ring light</h4>
+                <p>
+                  Iluminación regulable, control remoto y soporte móvil.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1526178610350-0d3de3cddb84?auto=format&fit=crop&w=600&q=80" alt="Soporte dual" />
+                <img
+                  src="https://images.unsplash.com/photo-1526178610350-0d3de3cddb84?auto=format&fit=crop&w=600&q=80"
+                  alt="Soporte dual"
+                />
                 <h4>Soportes duales</h4>
+                <p>
+                  Compatible con dos monitores, resortes a gas y clamp C.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1565375816081-031a56ba9786?auto=format&fit=crop&w=600&q=80" alt="Organizador de cables" />
+                <img
+                  src="https://images.unsplash.com/photo-1565375816081-031a56ba9786?auto=format&fit=crop&w=600&q=80"
+                  alt="Organizador de cables"
+                />
                 <h4>Organizadores de escritorio</h4>
+                <p>
+                  Bandejas metálicas, clips y canaletas autoadhesivas.
+                </p>
               </article>
               <article class="product-card">
-                <img src="https://images.unsplash.com/photo-1471478331149-c72f17e33c73?auto=format&fit=crop&w=600&q=80" alt="Soporte profesional" />
+                <img
+                  src="https://images.unsplash.com/photo-1471478331149-c72f17e33c73?auto=format&fit=crop&w=600&q=80"
+                  alt="Soporte profesional"
+                />
                 <h4>Soportes profesionales</h4>
+                <p>Grips, clamps y sliders modulares para estudio.</p>
               </article>
             </div>
           </section>
@@ -918,8 +1747,17 @@
           <div>
             <p class="eyebrow">Contacto</p>
             <h2>¿Necesitás asesoramiento?</h2>
-            <p>Escribinos por WhatsApp, email o visitanos en nuestra casa central.</p>
-            <a class="btn" href="https://wa.me/5491144441234" target="_blank" rel="noopener">Chatear ahora</a>
+            <p>
+              Escribinos por WhatsApp, email o visitanos en nuestra casa
+              central.
+            </p>
+            <a
+              class="btn"
+              href="https://wa.me/5491144441234"
+              target="_blank"
+              rel="noopener"
+              >Chatear ahora</a
+            >
           </div>
           <ul class="contact__list">
             <li>
@@ -950,8 +1788,13 @@
           <a href="#ofertas">Ofertas</a>
           <a href="#contacto">Contacto</a>
         </div>
-        <p class="site-footer__legal">© 2024 enviostech. Todos los derechos reservados.</p>
+        <p class="site-footer__legal">
+          © 2024 enviostech. Todos los derechos reservados.
+        </p>
       </div>
     </footer>
   </body>
 </html>
+```
+
+Si querés, después vemos también el `styles.css` para ajustarlo al nuevo hero con grid e imagen.
